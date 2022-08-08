@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="title">
+            <P>ToDo Lister</P>
+        </div>
+        <div class="card">
+
+            <div class="inputcon" >
+                <i class="fa-solid fa-angle-down" id="dropdown" onclick="cheackall()"></i>
+                <input id="inputtexter" type="text"  placeholder="Write down the done list... "  >
+                
+            </div>
+            <div class="listitem">
+                <ul id="listitems">
+
+                
+
+                </ul>
+            </div>
+            <div class="c_buttoncon">
+                <button id = "all"  onclick="all_btn()">All</button>
+                <button id = "active" onclick="active_btn()">Active</button>
+                <button id = "completed" onclick="complete_btn()">Completed</button>
+              </div> 
+            <div class="button_area">
+              <P id="itemcount">itemcount</P> 
+              <div class="clearButton">
+                <p id = "clearcomplete" onclick="clearstorage()" ondblclick="doubleclicker()">ClearCompleted</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
